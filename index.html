@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Louez une Dark Kitchen clé en main avec KitchHub. Espaces professionnels équipés, conformes HACCP, accessibles 24/7.">
+  <title>KitchHub — Dark Kitchens Industrielles</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="KitchHub - Retour à l'accueil">
+        Kitch<span>Hub</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="offres.html" class="nav-link">Offres</a></li>
+          <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+          <li><a href="#espaces" class="nav-link">Espaces</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary nav-cta">Demander une visite</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ============================================
+         HERO SECTION WITH CAROUSEL
+         ============================================ -->
+    <section class="hero section-spacious" role="region" aria-labelledby="hero-title">
+      <!-- Carousel Background -->
+      <div class="hero-carousel">
+        <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1920&q=80');"></div>
+        <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1584990347449-39b0e5bc6d3e?w=1920&q=80');"></div>
+        <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=1920&q=80');"></div>
+        <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1920&q=80');"></div>
+        <div class="carousel-overlay"></div>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button class="carousel-indicator active" aria-label="Image 1" data-slide="0"></button>
+        <button class="carousel-indicator" aria-label="Image 2" data-slide="1"></button>
+        <button class="carousel-indicator" aria-label="Image 3" data-slide="2"></button>
+        <button class="carousel-indicator" aria-label="Image 4" data-slide="3"></button>
+      </div>
+
+      <div class="container hero-content">
+        <!-- LED Status Indicator -->
+        <div class="led-indicator" style="margin-bottom: var(--space-xl);">
+          <div class="led"></div>
+          <span class="led-label">SYSTÈME OPÉRATIONNEL</span>
+        </div>
+
+        <h1 id="hero-title">Louez une Dark Kitchen clé en main.</h1>
+
+        <p class="hero-lead">
+          Des espaces de production professionnels équipés, conformes aux normes sanitaires, disponibles à la journée ou au mois. Sans investissement lourd.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#offres" class="btn btn-primary btn-large">
+            Voir les offres
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary btn-large">Demander une visite</a>
+        </div>
+
+        <div class="trust-bar">
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            Conforme HACCP
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0110 0v4"/>
+            </svg>
+            Accès sécurisé
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+            Équipements pro
+          </div>
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            Contrat flexible
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ESPACES SECTION
+         ============================================ -->
+    <section class="section" id="espaces" role="region" aria-labelledby="espaces-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="espaces-title">Nos espaces de production</h2>
+          <p class="text-lead">Des cuisines professionnelles pensées pour les food entrepreneurs</p>
+        </div>
+
+        <div class="spaces-grid">
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80" alt="Poste de travail en inox" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Poste de travail inox</h3>
+              <p>Plan de travail 120x60cm, évier intégré, robinet pédalique</p>
+            </div>
+          </article>
+
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1572522768464-c1c7cdd6b0d6?w=600&q=80" alt="Hotte professionnelle" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Hotte et extraction</h3>
+              <p>Hotte dégraisseur 150cm, extraction haute performance</p>
+            </div>
+          </article>
+
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80" alt="Zone de stockage" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Zone de stockage</h3>
+              <p>Étagères inox, bacs alimentaires, containment organisé</p>
+            </div>
+          </article>
+
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=600&q=80" alt="Zone de plonge" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Zone de plonge</h3>
+              <p>Bac double 80x80cm, lave-vaisselle professionnel, table de tri</p>
+            </div>
+          </article>
+
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=600&q=80" alt="Chambre froide" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Chambre froide</h3>
+              <p>Positive 4m³ + Négative 2m³, contrôle de température continu</p>
+            </div>
+          </article>
+
+          <article class="space-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&q=80" alt="Équipements cuisson" loading="lazy">
+            <div class="space-card-content">
+              <h3 class="space-card-title">Équipements cuisson</h3>
+              <p>Four convection, planchas, friteuse selon disponibilité</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         OFFRES SECTION
+         ============================================ -->
+    <section class="section" id="offres" role="region" aria-labelledby="offres-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="offres-title">Choisissez votre formule</h2>
+          <p class="text-lead">Des offres adaptées à tous les stades de développement</p>
+        </div>
+
+        <div class="offers-grid">
+          <!-- Starter -->
+          <article class="offer-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <h3 class="offer-name">Starter</h3>
+            <p class="offer-tagline">Idéal pour tester et démarrer</p>
+            <div class="offer-price">
+              590€<span>/mois</span>
+            </div>
+
+            <ul class="offer-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                1 poste de travail équipé
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Accès heures ouvrées (8h-20h)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                2m³ stockage en froid positif
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Accès plonge commune
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Wifi et maintenance incluse
+              </li>
+            </ul>
+
+            <div class="offer-footer">
+              <a href="#contact" class="btn btn-secondary btn-block">Choisir Starter</a>
+            </div>
+          </article>
+
+          <!-- Pro -->
+          <article class="offer-card featured">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="offer-badge">Recommandé</div>
+            <h3 class="offer-name">Pro</h3>
+            <p class="offer-tagline">Pour développer votre activité</p>
+            <div class="offer-price">
+              990€<span>/mois</span>
+            </div>
+
+            <ul class="offer-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                2 postes de travail équipés
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Accès élargi (6h-23h)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Froid positif 4m³ + négatif 1m³
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Zone de stockage dédiée
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Accès fours et équipements
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Maintenance + nettoyage 1x/sem
+              </li>
+            </ul>
+
+            <div class="offer-footer">
+              <a href="#contact" class="btn btn-primary btn-block">Choisir Pro</a>
+            </div>
+          </article>
+
+          <!-- Premium -->
+          <article class="offer-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <h3 class="offer-name">Premium</h3>
+            <p class="offer-tagline">L'excellence pour vos gros volumes</p>
+            <div class="offer-price">
+              1490€<span>/mois</span>
+            </div>
+
+            <ul class="offer-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                3+ postes de travail
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Accès 24/7 sans restriction
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Froid positif 8m³ + négatif 2m³
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Zone stockage privative sécurisée
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Équipements cuisson complets
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Maintenance + nettoyage quotidien
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg>
+                Support prioritaire dédié
+              </li>
+            </ul>
+
+            <div class="offer-footer">
+              <a href="#contact" class="btn btn-secondary btn-block">Choisir Premium</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PRICING SECTION
+         ============================================ -->
+    <section class="section" id="tarifs" role="region" aria-labelledby="tarifs-title" style="background: var(--muted);">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="tarifs-title">Tarifs selon votre ville</h2>
+          <p class="text-lead">Les prix varient selon la localisation et la durée d'engagement</p>
+        </div>
+
+        <div class="pricing-controls">
+          <div class="pricing-select">
+            <label for="city-select">Ville</label>
+            <select id="city-select" aria-label="Sélectionnez votre ville">
+              <option value="paris">Paris</option>
+              <option value="lyon">Lyon</option>
+              <option value="marseille">Marseille</option>
+              <option value="lille">Lille</option>
+              <option value="bordeaux">Bordeaux</option>
+            </select>
+          </div>
+
+          <div class="pricing-select">
+            <label for="duration-select">Durée</label>
+            <select id="duration-select" aria-label="Sélectionnez la durée d'engagement">
+              <option value="monthly">Mensuel</option>
+              <option value="quarterly">Trimestriel (-5%)</option>
+              <option value="annual">Annuel (-15%)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="price-display">
+          <p>Estimation pour Paris - Mensuel</p>
+          <div class="price">Starter : <span id="price-starter">590€</span> / mois</div>
+        </div>
+
+        <p class="pricing-note text-small">
+          Prix indicatifs. Contactez-nous pour un devis personnalisé.
+        </p>
+
+        <div class="pricing-legal">
+          <div class="pricing-legal-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+            Dépôt de garantie : 1 mois
+          </div>
+          <div class="pricing-legal-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            Engagement : mensuel / trimestriel
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         HOW IT WORKS SECTION
+         ============================================ -->
+    <section class="section" id="comment-ca-marche" role="region" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="how-title">Comment ça marche ?</h2>
+          <p class="text-lead">Lancez votre activité en 4 étapes simples</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Choisissez votre offre</h3>
+            <p>Sélectionnez la formule adaptée à vos besoins : Starter, Pro ou Premium</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Visite + dossier</h3>
+            <p>Visitez nos espaces et constituez votre dossier (KBIS, assurance, hygiène)</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h3>Signature + accès</h3>
+            <p>Signez le contrat et recevez vos badges d'accès sécurisés</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">04</div>
+            <h3>Lancez vos ventes</h3>
+            <p>Installez-vous et commencez à produire dès le lendemain</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FAQ SECTION
+         ============================================ -->
+    <section class="section" id="faq" role="region" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-title">Questions fréquentes</h2>
+          <p class="text-lead">Tout ce que vous devez savoir sur nos Dark Kitchens</p>
+        </div>
+
+        <div class="faq" role="list">
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              <span>Les espaces sont-ils conformes aux normes HACCP ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-1">
+              <div class="faq-answer-inner">
+                Oui, l'ensemble de nos espaces sont conformes aux normes sanitaires en vigueur. Ils sont agréés par les services vétérinaires et respectent les principes HACCP. Les surfaces sont en inox alimentaire, nous avons des procédures de nettoyage strictes et un suivi des températures.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              <span>Quelle assurance dois-je souscrire ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-2">
+              <div class="faq-answer-inner">
+                Vous devez obligatoirement souscrire une responsabilité civile professionnelle et une assurance multirisque alimentaire. Nous pouvons vous recommander des partenaires spécialisés. L'attestation d'assurance est requise avant l'installation.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              <span>Le matériel de cuisine est-il inclus ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-3">
+              <div class="faq-answer-inner">
+                L'infrastructure de base est incluse : plans de travail, hottes, chambres froides, plonge. Pour le matériel spécifique (robots, mixeurs, ustensiles), nous proposons des options de location ou vous pouvez utiliser votre propre matériel.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              <span>Quels sont les horaires d'accès ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-4">
+              <div class="faq-answer-inner">
+                Les horaires dépendent de votre formule : Starter (8h-20h), Pro (6h-23h), Premium (24/7). L'accès se fait par badge sécurisé. Vous pouvez également ajouter des options pour étendre vos horaires.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              <span>Puis-je stocker mes marchandises sur place ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-5">
+              <div class="faq-answer-inner">
+                Oui, chaque formule inclut un espace de stockage en froid positif et/ou négatif. Les formules Pro et Premium offrent des zones de stockage dédiées et sécurisées.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              <span>Quelle est la durée d'engagement et les conditions de résiliation ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-6">
+              <div class="faq-answer-inner">
+                Nous proposons des contrats mensuels, trimestriels ou annuels avec des remises progressives. L'engagement minimum est d'1 mois. En cas de résiliation, un préavis de 1 mois est requis. Le dépôt de garantie est restitué sous 30 jours.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+              <span>Comment fonctionne la sécurité des lieux ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-7">
+              <div class="faq-answer-inner">
+                Nos sites sont équipés de badges d'accès individualisés, de vidéosurveillance et d'alarmes. Chaque bénéficiaire reçoit un code personnel unique. Les horaires sont enregistrés et nous assurons une présence humaine pendant les heures ouvrées.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+              <span>Y a-t-il des services supplémentaires disponibles ?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-8">
+              <div class="faq-answer-inner">
+                Oui, nous proposons plusieurs options : nettoyage quotidien/semaine, maintenance du matériel, espace bureaux, connexion à des livreurs partenaires, service de consignation. Contactez-nous pour en discuter selon vos besoins.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT CTA SECTION
+         ============================================ -->
+    <section class="section section-spacious" id="contact" role="region" aria-labelledby="contact-cta-title">
+      <div class="container text-center max-w-2xl mx-auto">
+        <h2 id="contact-cta-title">Prêt à lancer votre activité ?</h2>
+        <p class="text-lead" style="margin-bottom: var(--space-xl);">
+          Demandez une visite de nos espaces et recevez un devis personnalisé sous 24h
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-large">
+          Demander une visite / Devis
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================
+         AVIS CLIENTS SECTION
+         ============================================ -->
+    <section class="section" id="avis" role="region" aria-labelledby="avis-title" style="background: var(--muted);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 id="avis-title">Ce que disent nos clients</h2>
+          <p class="text-lead">Découvrez les témoignages des food entrepreneurs qui nous font confiance</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "Excellente expérience ! La formule Low Cost m'a permis de me lancer sans investissement lourd. Les équipements sont de qualité et l'espace est toujours impeccable."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">MA</div>
+              <div class="review-author-info">
+                <strong>Marie Amélie</strong>
+                <span>Fondatrice de Saveurs d'Asie</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "J'ai choisi la formule Medium pour développer mon activité de traiteur. L'accès 7j/7 et le stockage dédié m'ont permis d'augmenter ma production de 200%. Équipe réactive et pro."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">TD</div>
+              <div class="review-author-info">
+                <strong>Thomas Dubois</strong>
+                <span>Gérant de Traiteur Express</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-half"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "La formule Max est parfaite pour nos gros volumes. L'accès 24/7 et l'espace bureaux privatif nous permettent de gérer notre activité de livraison en toute autonomie. Rapport qualité-prix imbattable."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">SL</div>
+              <div class="review-author-info">
+                <strong>Sophie Laurent</strong>
+                <span>Directrice de Pizza Express</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 4 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "Installé depuis 6 mois dans la formule Medium, je suis ravi de la qualité des installations. Le support technique est toujours disponible et les espaces sont conformes aux normes HACCP."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">KB</div>
+              <div class="review-author-info">
+                <strong>Karim Benali</strong>
+                <span>Chef cuisinier - Le Comptoir du Maroc</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 5 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "Grâce à la formule Low Cost, j'ai pu tester mon concept de cuisine fusion sans risque. Après 3 mois, je suis passé à la formule Medium pour développer mon activité. Très satisfait !"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">CM</div>
+              <div class="review-author-info">
+                <strong>Camille Martin</strong>
+                <span>Fondatrice de Fusion Food</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 6 -->
+          <article class="review-card">
+            <div class="card-vents">
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+              <div class="card-vent"></div>
+            </div>
+            <div class="review-rating">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-half"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-text">
+              "La formule Max répond parfaitement aux besoins de notre franchise de livraison. Les équipements sont professionnels et la maintenance quotidienne nous fait gagner un temps précieux."
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">JP</div>
+              <div class="review-author-info">
+                <strong>Jean Perret</strong>
+                <span>Manager Burger King Express</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Reviews Summary -->
+        <div class="reviews-summary">
+          <div class="summary-card">
+            <div class="summary-rating">4.8<span>/5</span></div>
+            <div class="summary-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-filled"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" class="star-half"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="summary-text">Basé sur 150+ avis clients vérifiés</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>KitchHub</h4>
+          <p class="text-small" style="color: var(--text-muted); margin-top: var(--space-md);">
+            Votre partenaire pour l'installation et le développement de votre activité de restauration.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#offres">Nos offres</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#espaces">Espaces</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Villes desservies</h4>
+          <ul>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Lyon</a></li>
+            <li><a href="#">Marseille</a></li>
+            <li><a href="#">Lille</a></li>
+            <li><a href="#">Bordeaux</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              contact@kitchhub.fr
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              01 23 45 67 89
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              12 rue de la FoodTech, 75011 Paris
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 KitchHub. Tous droits réservés.</p>
+        <div style="display: flex; gap: var(--space-lg);">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

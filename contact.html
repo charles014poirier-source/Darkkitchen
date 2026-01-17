@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez KitchHub pour visiter nos dark kitchens ou obtenir un devis personnalisé.">
+  <title>Contact — KitchHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="KitchHub - Retour à l'accueil">
+        Kitch<span>Hub</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="index.html#offres" class="nav-link">Offres</a></li>
+          <li><a href="index.html#tarifs" class="nav-link">Tarifs</a></li>
+          <li><a href="index.html#espaces" class="nav-link">Espaces</a></li>
+          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+          <li><a href="index.html#contact" class="btn btn-primary nav-cta">Demander une visite</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ============================================
+       CONTACT PAGE HERO
+       ============================================ -->
+    <section class="section section-spacious" role="region" aria-labelledby="contact-hero-title">
+      <div class="container text-center max-w-2xl mx-auto">
+        <!-- LED Status Indicator -->
+        <div class="led-indicator" style="margin-bottom: var(--space-xl);">
+          <div class="led"></div>
+          <span class="led-label">PRÊT À COMMENCER</span>
+        </div>
+
+        <h1 id="contact-hero-title">Contactez-nous</h1>
+        <p class="text-lead">
+          Demandez une visite de nos espaces ou recevez un devis personnalisé pour votre projet
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+       CONTACT FORM & INFO
+       ============================================ -->
+    <section class="section" role="region" aria-labelledby="contact-form-title">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <!-- Success Message -->
+            <div id="form-success" class="form-success" role="alert" aria-live="polite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <p style="margin: 0;">Votre demande a bien été envoyée !</p>
+              <p class="text-small" style="margin: var(--space-xs) 0 0;">Nous vous répondrons sous 24h.</p>
+            </div>
+
+            <!-- Form -->
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="lastname" class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    placeholder="Votre nom"
+                  >
+                  <p class="form-error" id="lastname-error">Veuillez renseigner votre nom</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="firstname" class="form-label">Prénom</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    placeholder="Votre prénom"
+                  >
+                  <p class="form-error" id="firstname-error">Veuillez renseigner votre prénom</p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    placeholder="votre@email.com"
+                  >
+                  <p class="form-error" id="email-error">Veuillez renseigner un email valide</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Téléphone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    placeholder="06 12 34 56 78"
+                  >
+                  <p class="form-error" id="phone-error">Veuillez renseigner un numéro valide</p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city" class="form-label">Ville souhaitée</label>
+                  <select id="city" name="city" class="form-select" required aria-required="true">
+                    <option value="">Sélectionnez une ville</option>
+                    <option value="paris">Paris</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="marseille">Marseille</option>
+                    <option value="lille">Lille</option>
+                    <option value="bordeaux">Bordeaux</option>
+                    <option value="other">Autre ville</option>
+                  </select>
+                  <p class="form-error" id="city-error">Veuillez sélectionner une ville</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="offer" class="form-label">Offre souhaitée</label>
+                  <select id="offer" name="offer" class="form-select" required aria-required="true">
+                    <option value="">Sélectionnez une offre</option>
+                    <option value="starter">Starter (à partir de 590€/mois)</option>
+                    <option value="pro">Pro (à partir de 990€/mois)</option>
+                    <option value="premium">Premium (à partir de 1490€/mois)</option>
+                    <option value="uncertain">Je ne sais pas encore</option>
+                  </select>
+                  <p class="form-error" id="offer-error">Veuillez sélectionner une offre</p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="visit-date" class="form-label">Date souhaitée pour la visite</label>
+                <input
+                  type="date"
+                  id="visit-date"
+                  name="visit-date"
+                  class="form-input"
+                  min=""
+                >
+                <p class="text-small text-muted">Nous vous confirmerons l'horaire par email</p>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Décrivez votre projet, vos besoins spécifiques, vos questions..."
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                    aria-required="true"
+                  >
+                  <label for="consent">
+                    J'accepte d'être recontacté par KitchHub par email ou téléphone.
+                  </label>
+                </div>
+                <p class="form-error" id="consent-error">Vous devez accepter d'être recontacté</p>
+              </div>
+
+              <p class="text-small text-muted" style="margin-bottom: var(--space-md);">
+                Champs obligatoires
+              </p>
+
+              <button type="submit" class="btn btn-primary btn-block btn-large">
+                Envoyer ma demande
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <!-- Contact Details -->
+            <div class="contact-info-card">
+              <h3>Nos coordonnées</h3>
+
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <div>
+                  <strong>Email</strong><br>
+                  <a href="mailto:contact@kitchhub.fr">contact@kitchhub.fr</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <div>
+                  <strong>Téléphone</strong><br>
+                  <a href="tel:0123456789">01 23 45 67 89</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div>
+                  <strong>Adresse</strong><br>
+                  12 rue de la FoodTech<br>
+                  75011 Paris, France
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div>
+                  <strong>Horaires</strong><br>
+                  Lundi - Vendredi : 9h - 18h<br>
+                  Samedi : 10h - 16h
+                </div>
+              </div>
+
+              <hr style="border: none; border-top: 1px solid var(--border); margin: var(--space-md) 0;">
+
+              <p class="text-small">
+                <strong>Délai de réponse :</strong> Sous 24h ouvrées (48h en période haute)
+              </p>
+            </div>
+
+            <!-- Mini FAQ -->
+            <div class="contact-info-card mini-faq">
+              <h4>Avant la visite</h4>
+
+              <details>
+                <summary>Faut-il préparer des documents ?</summary>
+                <p class="text-small">
+                  Pour la visite, aucun document n'est nécessaire. Pour la finalisation du dossier, préparez : KBIS, attestation d'assurance, carte d'identité.
+                </p>
+              </details>
+
+              <details>
+                <summary>Combien de temps dure une visite ?</summary>
+                <p class="text-small">
+                  Comptez 30 à 45 minutes pour visiter les espaces, discuter de votre projet et recevoir un premier devis.
+                </p>
+              </details>
+
+              <details>
+                <summary>Puis-je visiter plusieurs sites ?</summary>
+                <p class="text-small">
+                  Oui, nous organisons volontiers des visites de plusieurs sites si vous hésitez entre les emplacements.
+                </p>
+              </details>
+
+              <details>
+                <summary>La visite est-elle gratuite ?</summary>
+                <p class="text-small">
+                  Oui, toutes les visites sont gratuites et sans engagement. C'est l'occasion de vérifier que nos espaces correspondent à vos besoins.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>KitchHub</h4>
+          <p class="text-small" style="color: var(--text-muted); margin-top: var(--space-md);">
+            Votre partenaire pour l'installation et le développement de votre activité de restauration.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#offres">Nos offres</a></li>
+            <li><a href="index.html#tarifs">Tarifs</a></li>
+            <li><a href="index.html#espaces">Espaces</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Villes desservies</h4>
+          <ul>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Lyon</a></li>
+            <li><a href="#">Marseille</a></li>
+            <li><a href="#">Lille</a></li>
+            <li><a href="#">Bordeaux</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              contact@kitchhub.fr
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              01 23 45 67 89
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              12 rue de la FoodTech, 75011 Paris
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 KitchHub. Tous droits réservés.</p>
+        <div style="display: flex; gap: var(--space-lg);">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
