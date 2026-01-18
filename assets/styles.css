@@ -1845,6 +1845,9 @@ p {
   /* Navigation */
   .menu-toggle {
     display: flex;
+    position: relative;
+    z-index: 1001;
+    margin-right: var(--space-sm);
   }
 
   .nav-list {
@@ -1852,6 +1855,7 @@ p {
     top: var(--header-height);
     left: 0;
     right: 0;
+    z-index: 1000;
     flex-direction: column;
     background: var(--background);
     padding: var(--space-md);
